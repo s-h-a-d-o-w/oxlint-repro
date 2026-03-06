@@ -2,10 +2,12 @@
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "ignorePatterns": ["extension/src/indexer/test-workspaces/**/*", "neev-chat/**/*"],
   "env": {
-    "node": true,
-    "browser": true
+    "node": true
   },
-  "options": {
-    "typeAware": true
+  "plugins": [
+    "eslint"
+  ],
+  "categories": {
+    "nursery": "error"
   }
 }
