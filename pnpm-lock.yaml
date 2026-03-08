@@ -7,13 +7,23 @@ settings:
 importers:
 
   .:
+    dependencies:
+      react:
+        specifier: ^19.2.4
+        version: 19.2.4
     devDependencies:
+      '@types/react':
+        specifier: ^19.2.14
+        version: 19.2.14
       oxlint:
         specifier: ^1.51.0
         version: 1.51.0(oxlint-tsgolint@0.16.0)
       oxlint-tsgolint:
         specifier: ^0.16.0
         version: 0.16.0
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
 
 packages:
 
@@ -169,6 +179,12 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@types/react@19.2.14':
+    resolution: {integrity: sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==}
+
+  csstype@3.2.3:
+    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
+
   oxlint-tsgolint@0.16.0:
     resolution: {integrity: sha512-4RuJK2jP08XwqtUu+5yhCbxEauCm6tv2MFHKEMsjbosK2+vy5us82oI3VLuHwbNyZG7ekZA26U2LLHnGR4frIA==}
     hasBin: true
@@ -182,6 +198,15 @@ packages:
     peerDependenciesMeta:
       oxlint-tsgolint:
         optional: true
+
+  react@19.2.4:
+    resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
+    engines: {node: '>=0.10.0'}
+
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
 
 snapshots:
 
@@ -260,6 +285,12 @@ snapshots:
   '@oxlint/binding-win32-x64-msvc@1.51.0':
     optional: true
 
+  '@types/react@19.2.14':
+    dependencies:
+      csstype: 3.2.3
+
+  csstype@3.2.3: {}
+
   oxlint-tsgolint@0.16.0:
     optionalDependencies:
       '@oxlint-tsgolint/darwin-arm64': 0.16.0
@@ -291,3 +322,7 @@ snapshots:
       '@oxlint/binding-win32-ia32-msvc': 1.51.0
       '@oxlint/binding-win32-x64-msvc': 1.51.0
       oxlint-tsgolint: 0.16.0
+
+  react@19.2.4: {}
+
+  typescript@5.9.3: {}

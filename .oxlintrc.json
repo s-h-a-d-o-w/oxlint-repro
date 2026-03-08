@@ -1,13 +1,15 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "ignorePatterns": ["extension/src/indexer/test-workspaces/**/*", "neev-chat/**/*"],
-  "env": {
-    "node": true
-  },
   "plugins": [
-    "eslint"
+    "typescript"
   ],
   "categories": {
-    "nursery": "error"
+    "restriction": "error"
+  },
+  "options": {
+    "typeAware": true
+  },
+  "rules": {
+    "typescript/no-import-type-side-effects": "error"
   }
 }
